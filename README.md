@@ -1,27 +1,40 @@
-<b>
-  <i>React hooks collection:</i>
-</b>
+# React's most useful hooks
 
-# 1. useArray
++ [Hooks](#hooks)
+  - [useArray](#usearray)
+  - [useBrowserHistory](#usebrowserhistory)
+  - [useClientOnline](#useclientonline)
+  - [useClipboard](#useclipboard)
+  - [useCookieStorage](#usecookiestorage)
+  - [useEventListener](#useeventlistener)
+  - [usePrevious](#useprevious)
+  - [useRenderCount](#userendercount)
+  - [useLocalStorage](#uselocalstorage)
+  - [useSessionStorage](#usesessionstorage)
+  - [useToggle](#usetoggle)
+
+<div id="hook">
+
+# useArray
 
 ```javascript
 const [array, setArray] = useArray(defaultValue)
 ```
 
 
-# 2. useBrowserHistory
+# useBrowserHistory
 
 ```javascript
 const [handleBack, handleForward] = useBrowserHistory(name, isActive, onBack, onForward);
 ```
 
-# 3. useClientOnline
+# useClientOnline
 
 ```javascript
 const online = useOnlineStatus() // boolean (true, false)
 ```
 
-# 4. useClipboard
+# useClipboard
 
 ```javascript
 const [copyToClipboard, { success }] = useCopyToClipboard()
@@ -34,13 +47,13 @@ How to use:
 </button>
 ```
 
-# 5. useCookieStorage
+# useCookieStorage
 
 ```javascript
 const [cookie, setCookie] = useCookie();
 ```
 
-# 6. useEventListener
+# useEventListener
 
 ```javascript
 useEventListener("clieck", e => {
@@ -48,33 +61,35 @@ useEventListener("clieck", e => {
 })
 ```
 
-# 7. usePrevious
+# usePrevious
 
 ```javascript
 const previousValue = usePrevious(value)
 ```
 
 
-# 8. useRenderCount
+# useRenderCount
 
 ```javascript
 const count = useRenderCount() // integer
 ```
 
-# 9. useLocalStorage
+# useLocalStorage
 
 ```javascript
 const [name, setName] = useLocalStorage()
 ```
 
-# 10. useSessionStorage
+# useSessionStorage
 
 ```javascript
 const [name, setName] = useSessionStorage()
 ```
 
-# 11. useToggle
+# useToggle
 
 ```javascript
 const [value, toggleValue] = useToggle(false)
 ```
+
+</div>
